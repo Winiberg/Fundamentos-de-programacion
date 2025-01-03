@@ -13,12 +13,11 @@ def mientras_hacer():
 
 def repetir_hasta_que(): 
     i = 1
-    while True:
+    condicion = False
+    while not condicion:
         print(i)
         i = i + 1
-        if i > 10:
-            break
+        condicion = i > 10
 
 if __name__ == '__main__':
     repetir_hasta_que()
-    
